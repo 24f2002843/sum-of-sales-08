@@ -1,0 +1,21 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f8f9fa;
+}
+
+:root {
+    --primary-color: #007bff;
+    --secondary-color: #6c757d;
+}
+
+#total-sales {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: var(--primary-color);
+}
+
+@media (max-width: 576px) {
+    #total-sales {
+        font-size: 1.2rem;
+    }
+}
