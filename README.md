@@ -5,7 +5,7 @@
 
 ## Features
 - Fetches sales data from a CSV file.
-- Sums the sales and displays it on the page.
+- Sums the sales and displays it on the page, multiplied by 2.
 - Uses Bootstrap 5 for responsive design.
 
 ## Accessibility
@@ -23,11 +23,15 @@
 - Data source: `data.csv`
 
 ## Keyword coverage
-- Sales Summary: Title and main heading.
-- Total Sales: Displayed in the main content area.
-- Bootstrap: Loaded from CDN.
+| Keyword                  | Implementation Location                                  |
+|--------------------------|---------------------------------------------------------|
+| Sales Summary x2        | Title in `index.html`                                   |
+| Total Sales             | Displayed in the main content area in `index.html`      |
+| Bootstrap                | Loaded from CDN in `index.html`                         |
+| darken the theme        | Background color in `style.css`                         |
 
-## Changelog: Round 1
-- Implemented app to fetch sales data from `data.csv` and summed the sales column.
-- Added mobile-responsive layout with Bootstrap.
-- Included self-test functionality to verify checks.
+## Changelog: Round 2
+- Updated the title to 'Sales Summary x2'.
+- Multiplied the total sales by 2.
+- Darkened the theme by changing background color.
+- Adjusted existing code to maintain required functionality.
