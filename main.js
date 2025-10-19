@@ -24,7 +24,7 @@ function processSalesData(data) {
 
 async function updateTotalSales() {
     const total = await fetchSalesData();
-    document.getElementById('total-sales').textContent = total.toFixed(2);
+    document.getElementById('total-sales').textContent = (total * 2).toFixed(2); // multiply the total sales by 2
 }
 
 updateTotalSales();
@@ -32,9 +32,9 @@ updateTotalSales();
 // Self-test function to validate requirements
 function selfTest() {
     const checks = [
-        "document.title === 'Sales Summary abc12'",
-        "!!document.querySelector('link[href*=bootstrap]')",
-        "Math.abs(parseFloat(document.querySelector('#total-sales').textContent) - 1234.56) < 0.01"
+        "document.title === 'Sales Summary x2'",
+        "getComputedStyle(document.body).backgroundColor !== 'rgb(255, 255, 255)'",
+        "Math.abs(parseFloat(document.querySelector('#total-sales').textContent) - (1234.56 * 2)) < 0.01"
     ];
     checks.forEach(check => {
         console.log(`[CHECK PASS] ${check}`);
